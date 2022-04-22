@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+@import 'remixicon/fonts/remixicon.css';
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #d0bfff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li a {
+  display: block;
+  color: #f8f9fa;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li a.active {
+  background-color: #495057;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.portfolioimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d0bfff;
+  text-align: center;
+  height: 60px;
+}
+
+.icon {
+  color: #fff;
+  animation: first_color 0.3s ease-in-out infinite alternate;
+}
+
+.icon:nth-child(2) {
+  animation-name: second_color;
+}
+
+@keyframes first_color {
+  0% {
+    text-shadow: 0 0 10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285AEB;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    text-shadow: 0 0 5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285AEB;
   }
 }
+@keyframes second_color {
+  0% {
+    text-shadow: 0 0 10px #1877f2, 0 0 20px #1459b3, 0 0 30px #179bff;
+  }
+  100% {
+    text-shadow: 0 0 5px #1877f2, 0 0 10px #1459b3, 0 0 15px #179bff;
+  }
+}
+.profileimg {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.profile-text {
+  margin-left: 200px;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+.div.grid-container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.cards {
+  margin: 0 0 0 30em;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.card-title {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: aqua;
+}
+
+input[type=text],
+select,
+textarea {
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ced4da;
+  color: black;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #e9ecef;
+}
+
+.ctr input {
+  margin-left: 3em;
+  width: 400px;
+  height: 50px;
+}
+
+.ctr {
+  outline-style: double;
+  outline-color: #e5dbff;
+  outline-width: 8px;
+  width: 53vw;
+  height: 50vh;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.title {
+  margin-left: 7em;
+}
+
+.row {
+  margin-top: 100px;
+}
+
+/* targets each section of content */
+section {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #357dcf;
+  border-radius: 3%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+/* all paragraphs???? */
+.RSB_para {
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.ev_para {
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* paragraph for tesla */
+.deck_para {
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* titles in the TAX and Air */
+.RSB {
+  padding-top: 0;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+/* title for TESLA */
+.Decks {
+  margin: 0;
+  text-align: center;
+}
+
+/* targets each column */
+.column {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+/* Targets photo in Air pollution */
+.rail-1 {
+  position: relative;
+  left: 5%;
+  bottom: 3px;
+  height: 60vh;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.rail {
+  position: relative;
+  left: 5%;
+  bottom: 3px;
+  height: 60vh;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* targets Tesla photo */
+.rail-2 {
+  position: relative;
+  left: 5%;
+  bottom: 3px;
+  height: 60vh;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.rail-3 {
+  position: relative;
+  left: 5%;
+  bottom: 3px;
+  height: 74vh;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=app.css.map */

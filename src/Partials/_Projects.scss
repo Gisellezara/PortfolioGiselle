@@ -1,0 +1,93 @@
+.row {
+    margin-top: 100px;
+  }
+  /* targets each section of content */
+  section {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #357dcf;
+    border-radius: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  /* all paragraphs???? */
+  .RSB_para {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .ev_para {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  /* paragraph for tesla */
+  .deck_para {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  /* titles in the TAX and Air */
+  .RSB {
+    padding-top: 0;
+    text-align: center;
+    /* justify-content: center; */
+  }
+  /* title for TESLA */
+  .Decks {
+    margin: 0;
+    text-align: center;
+  }
+  /* targets each column */
+  .column {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  /* Targets photo in Air pollution */
+  .rail-1 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .rail {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  /* targets Tesla photo */
+  .rail-2 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .rail-3 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 74vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
