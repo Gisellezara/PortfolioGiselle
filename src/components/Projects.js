@@ -111,10 +111,10 @@ const Projects = () => {
                 <h2 className="title">Eccommerce: Gigi Designs </h2>
                 <p className="text">I designed this project based on my collection of cups. Gigi Designs is a website where customers can go and buy custom-made cups or exclusive cups. I created this project on React and had to develop an MYSQL database that holds all of my product’s information. I then used Express to get my data from the database and render it to my produces page. I ended up using SASS for my CSS, making it easier to locate things.</p>
                 <div className="btncont">
-                <a class="btn" href="" role="button">
+                <a class="btn" href="https://github.com/Gisellezara/ecomGigi.git" role="button">
                   View GitHub
                 </a>
-                <a class="btn" href="" role="button">
+                <a class="btn" href="https://main.d33406e979xoig.amplifyapp.com/Home" role="button">
                   View Website
                 </a>
                 </div>
