@@ -3,12 +3,42 @@ import Appcontainer from "./Appcontainer";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="">
       <Appcontainer>
-      <div className="ctr">
+      <div class="contact-form">
+        <form>
+          <h3 class="heading"> CONTACT ME </h3>
+          <input name="name" 
+          type="text" 
+          class="input"
+           placeholder="Name" />
+
+          <input
+            name="email"
+            type="text"
+            class="input"
+            placeholder="Email"
+        
+          />
+          
+
+
+          <textarea
+            name="text"
+            class="input"
+            placeholder="Comments or Questions"
+          ></textarea>
+
+          <input type="submit" value="SUBMIT" />
+        </form>
+    
+      </div>
+
+    
+      {/* <div className="ctr">
         <form action="process.php" method="post">
           <h3 className="title">
-            <i>Contact Me</i>
+            <i>Get in Touch</i>
           </h3>
           <input type="text" name="firstname" placeholder="Full Name" />
           <br />
@@ -20,7 +50,7 @@ const Contact = () => {
         </form>
        
        
-      </div>
+      </div> */}
       </Appcontainer>
     </div>
   )

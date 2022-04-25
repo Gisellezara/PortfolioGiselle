@@ -8,23 +8,17 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="navcontainer">
+    <div>
       
-      <nav>
-        <ul className="navheader">
-        <img className="portfolioimg" src="img/Giselleflower.png" alt='Giselle'/>
-        <li>
-          <h5><i>Giselle Guevara</i></h5>
-            <a href="/Profile">Profile</a>
-          </li>
-          <li>
-            <a href="/Projects">Projects</a>
-          </li>
-         
-          <li>
-            <a href="/Contact">Contact</a>
-          </li>
+      <nav className="navbar container">
+      {/* <img className="portfolioimg" src="img/Giselleflower.png" alt='Giselle'/> */}
+      <div>
+         <ul className="navlist">
+        <li><a href="/Profile" className="link">Profile</a></li>
+          <li><a href="/Projects" className="link">Projects</a></li>
+          <li><a href="/Contact" className="link" >Contact</a></li>
         </ul>
+        </div>
       </nav>
 
       <Outlet></Outlet>

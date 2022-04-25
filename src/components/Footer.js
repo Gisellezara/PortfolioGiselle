@@ -11,7 +11,7 @@ const Footer = () => {
                 
               <i className="ri-instagram-line icon"></i>
               <i className="ri-facebook-circle-line icon"></i>
-              <i className="ri-copyright-line ">2022</i>
+              <i className="ri-copyright-line icon "><i>Giselle2022</i></i>
                   
               </div>
           </footer>

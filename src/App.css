@@ -1,46 +1,57 @@
-@import 'remixicon/fonts/remixicon.css';
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #d0bfff;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+@import "remixicon/fonts/remixicon.css";
+.container {
+  margin: 0 auto;
 }
 
-li a {
-  display: block;
-  color: #f8f9fa;
-  padding: 8px 16px;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 16px;
+}
+
+.navbar a {
   text-decoration: none;
-}
-
-li a.active {
-  background-color: #495057;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+  color: inherit;
 }
 
 .portfolioimg {
+  margin-right: 50px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  box-shadow: 0 4px 20px 0 white, 0 6px 20px 0 white;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  color: white;
+  margin-left: 35em;
+  padding: 35px;
+}
+
+.link:not(is-active):hover::before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.link:not(is-active):hover {
+  color: gray;
 }
 
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #d0bfff;
+  background-color: black;
   text-align: center;
   height: 60px;
+  margin-top: 1%;
 }
 
 .icon {
@@ -52,12 +63,16 @@ footer {
   animation-name: second_color;
 }
 
+.icon:nth-child(3) {
+  animation-name: third_color;
+}
+
 @keyframes first_color {
   0% {
-    text-shadow: 0 0 10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285AEB;
+    text-shadow: 0 0 10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285aeb;
   }
   100% {
-    text-shadow: 0 0 5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285AEB;
+    text-shadow: 0 0 5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285aeb;
   }
 }
 @keyframes second_color {
@@ -68,113 +83,164 @@ footer {
     text-shadow: 0 0 5px #1877f2, 0 0 10px #1459b3, 0 0 15px #179bff;
   }
 }
-.profileimg {
-  width: 100px;
-  height: 100px;
-  float: right;
+@keyframes third_color {
+  0% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  }
+  100% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  }
+}
+* {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.homeback {
+  background: black;
+  color: white;
+  padding-top: 125px;
+}
+
+.profileimagecenter {
+  display: block;
+  margin-left: 786px;
+  margin-right: auto;
+  width: 993px;
+  height: 80vh;
+  margin-top: -20em;
 }
 
 .profile-text {
-  margin-left: 200px;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
 }
 
-.grid-container {
+.grid-Container {
   display: grid;
-  justify-content: end;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  background-color: white;
-  padding: 10px;
-}
-
-.div.grid-container {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-.cards {
-  margin: 0 0 0 30em;
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-  outline: 1px solid rgba(255, 255, 255, 0.5);
-  outline-offset: -8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.card-img {
-  inset: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  background-color: white;
+  padding-bottom: 150px;
+  padding-top: 55px;
 }
 
-.card-title {
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-  color: aqua;
-}
-
-input[type=text],
-select,
-textarea {
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #ced4da;
-  color: black;
-  border-radius: 4px;
-}
-
-input[type=submit]:hover {
-  background-color: #e9ecef;
-}
-
-.ctr input {
-  margin-left: 3em;
-  width: 400px;
-  height: 50px;
-}
-
-.ctr {
-  outline-style: double;
-  outline-color: #e5dbff;
-  outline-width: 8px;
-  width: 53vw;
-  height: 50vh;
+.grid-Container > div {
   text-align: center;
-  margin-right: 25px;
+  padding: 20px 0;
 }
 
-.title {
-  margin-left: 7em;
+.profileproject img {
+  height: 250px;
+  width: 250px;
+  display: center;
+  border-radius: 5px;
+}
+
+.profileproject {
+  margin-left: 20%;
+  width: 65%;
+  background-color: white;
+  box-shadow: black;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.about {
+  text-align: center;
+  text-decoration: overline underline;
+}
+
+.input {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 2px solid #dee2e6;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.form {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #212529;
+  padding: 30px;
+  border-radius: 3%;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+  color: #adb5bd;
+}
+
+[type=submit] {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  background: black;
+  cursor: pointer;
+  color: #ced4da;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+  border-radius: 70px;
+}
+
+[type=submit]:hover {
+  background: white;
+}
+
+.heading {
+  color: white;
+}
+
+* {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.back {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .row {
   margin-top: 100px;
 }
 
-/* targets each section of content */
+/* targets each section of projects */
 section {
   margin-top: 2%;
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #357dcf;
+  background-color: black;
   border-radius: 3%;
   margin-right: 2%;
   margin-left: 2%;
 }
 
-/* all paragraphs???? */
-.RSB_para {
+/* all paragraphs */
+.text {
   font-family: sans-serif;
   font-size: 25px;
   margin-left: 15%;
@@ -182,42 +248,19 @@ section {
   margin-bottom: 5%;
   text-align: center;
   padding-bottom: 5%;
-}
-
-.ev_para {
-  font-family: sans-serif;
-  font-size: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-  padding-bottom: 5%;
-}
-
-/* paragraph for tesla */
-.deck_para {
-  font-family: sans-serif;
-  font-size: 25px;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 5%;
-  text-align: center;
-  padding-bottom: 5%;
+  color: white;
 }
 
 /* titles in the TAX and Air */
-.RSB {
+.title {
   padding-top: 0;
   text-align: center;
-  /* justify-content: center; */
+  text-decoration: underline;
+  color: white;
+  justify-content: center;
 }
 
-/* title for TESLA */
-.Decks {
-  margin: 0;
-  text-align: center;
-}
-
-/* targets each column */
+/* targets each img in the sections  */
 .column {
   position: relative;
   float: left;
@@ -225,7 +268,7 @@ section {
 }
 
 /* Targets photo in Air pollution */
-.rail-1 {
+.img-1 {
   position: relative;
   left: 5%;
   bottom: 3px;
@@ -234,7 +277,7 @@ section {
   border-radius: 20px;
 }
 
-.rail {
+.img2 {
   position: relative;
   left: 5%;
   bottom: 3px;
@@ -244,7 +287,7 @@ section {
 }
 
 /* targets Tesla photo */
-.rail-2 {
+.img4 {
   position: relative;
   left: 5%;
   bottom: 3px;
@@ -253,13 +296,39 @@ section {
   border-radius: 20px;
 }
 
-.rail-3 {
+.img3 {
   position: relative;
   left: 5%;
   bottom: 3px;
   height: 74vh;
   width: 100%;
   border-radius: 20px;
+}
+
+/*button effect */
+.btn {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  background: white;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  margin-top: 100px;
+  margin-right: 10%;
+  font-weight: 700;
+  border-radius: 70px;
+  padding: 15px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btncont {
+  margin-left: 12em;
 }
 
 /*# sourceMappingURL=app.css.map */
