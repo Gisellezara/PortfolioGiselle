@@ -1,0 +1,112 @@
+*{
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.back{
+  // background: url(../public/img/code.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.row {
+    margin-top: 100px;
+  }
+  /* targets each section of projects */
+  section {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    border-radius: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
+   
+  }
+  /* all paragraphs */
+  .text {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+    color: white;
+  }
+ 
+ 
+  /* titles in the TAX and Air */
+  .title {
+    padding-top: 0;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    justify-content: center; 
+  }
+  
+ 
+  /* targets each img in the sections  */
+  .column {
+    position: relative;
+    float: left;
+    width: 50%;
+    
+  }
+  /* Targets photo in Air pollution */
+  .img-1 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .img2 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  /* targets Tesla photo */
+  .img4 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .img3 {
+    position: relative;
+    left: 5%;
+    bottom: 3px;
+    height: 74vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+  /*button effect */
+   .btn{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    background: white;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    margin-top: 100px;
+    margin-right: 10%;
+    font-weight: 700;
+    border-radius: 70px;
+    padding: 15px;
+  }
+ .btn:hover {
+    background-color: black;
+    color: white;
+  }
+.btncont{
+  margin-left: 12em;
+}
