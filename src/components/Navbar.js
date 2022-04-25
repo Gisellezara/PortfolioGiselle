@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* <img className="portfolioimg" src="img/Giselleflower.png" alt='Giselle'/> */}
       <div>
          <ul className="navlist">
-        <li><a href="/Profile" className="link">Profile</a></li>
+        <li><a href="/" className="link">Profile</a></li>
           <li><a href="/Projects" className="link">Projects</a></li>
           <li><a href="/Contact" className="link" >Contact</a></li>
           
