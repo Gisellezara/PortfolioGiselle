@@ -46,14 +46,18 @@
   }
   
  
-  /* targets each img in the sections  */
   .column {
     position: relative;
     float: left;
     width: 50%;
     
   }
-  /* Targets photo in Air pollution */
+  .column1{
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  
   .img-1 {
     position: relative;
     left: 5%;
@@ -70,7 +74,7 @@
     width: 100%;
     border-radius: 20px;
   }
-  /* targets Tesla photo */
+ 
   .img4 {
     position: relative;
     left: 5%;
@@ -109,4 +113,17 @@
   }
 .btncont{
   margin-left: 12em;
+}
+
+@media (max-width: 769px){
+  div.column1{
+   float: left;
+   
+  }
+  .column {
+    position: relative;
+    width: 72%;
+    
+  }
+  
 }

@@ -13,7 +13,7 @@ const Projects = () => {
               <div className="column">
                 <img className="img-1" src="img/mexico.png" alt="Mexico" />
               </div>
-              <div className="column">
+              <div className="column1">
                 <h2 className="title">Gateway: Jalisco</h2>
                 <p className="text">
                   I designed this project when I was in the RoadtoHire Gateway.
@@ -44,9 +44,9 @@ const Projects = () => {
                   alt="Planet Progress"
                 />
               </div>
-              <div className="column">
+              <div className="column1">
                 <h2 className="title">Hope Hacks: Planet Progress</h2>
-                <p className="text">This Hackathon project was elaborated by my team we use API to get information on the air quality and how many RV charging stations are within a one-mile radius of the city you put in. I was responsible for the page’s design and how we wanted to display our information. I use gride containers to separate my sections, place each area where it needs to go and add a media query to make the page responsive.</p>
+                <p className="text">This Hackathon project was elaborated by my team e use API to get information on the air quality and how many RV charging stations are within a one-mile radius of the city you put in. I was responsible for the page’s design and how we wanted to display our information. I use gride containers to separate my sections, place each area where it needs to go and add a media query to make the page responsive.</p>
                 <div className="btncont">
                 <a
                   class="btn"
@@ -76,7 +76,7 @@ const Projects = () => {
                   alt="PennyJuice"
                 />
               </div>
-              <div className="column">
+              <div className="column1">
                 <h2 className="title"> Redesigned:Penny Juice</h2>
                 <p className="text">The redesign project was a group project. Our goal was to create a replicate of the original page and make it better. With this page, I was in charge of the about portion there. My main focus was to create something new with the CSS so I added a parallax scrolling.</p>
                 <div className="btncont">
@@ -107,7 +107,7 @@ const Projects = () => {
                   alt="Gigi Designs"
                 />
               </div>
-              <div className="column">
+              <div className="column1">
                 <h2 className="title">Eccommerce: Gigi Designs </h2>
                 <p className="text">Gigi Designs is a website where customers can go and buy custom-made cups or exclusive cups. I created this project on React and had to develop an MYSQL database that holds all of my product’s information. I then used Express to get my data from the database and render it to my produces page and used SASS for my CSS, making it easier to locate things.</p>
                 <div className="btncont">

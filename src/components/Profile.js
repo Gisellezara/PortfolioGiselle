@@ -25,19 +25,6 @@ const Profile = () => {
       </p>
   <img className="profileimagecenter" src="img/gigi.png" alt='Giselle'/>
 </div>
-
-  
-  {/* <h1 className='about'>About Me</h1>
-  <img className="profileimg" src="img/Giselleflower.png" alt='Giselle'/>
-  
-  <p className='profile-text'>I am a young, motivated individual who is 
-    enthusiastic when learning new Software languages
-     and can't wait to see how much I will grow within 
-     the Road to Hire coding program. I have recently discovered
-      my passion for coding and reach my full potential. Apart 
-      from coding, I also enjoy reading and traveling.
-      
-      </p> */}
       <br />
      <h1 className='about'>Projects</h1>
       <div class="grid-Container">
@@ -65,7 +52,7 @@ const Profile = () => {
             <div class="cardcon">
             <h2>Gigi Designs</h2>
            
-            <p>Ecomers</p>
+            <p>Ecommerce</p>
             <button>View</button>
             </div>
         </div>
