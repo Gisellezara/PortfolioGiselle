@@ -9,8 +9,8 @@ const Footer = () => {
               
                   
                 
-              <i className="ri-instagram-line icon"></i>
-              <i className="ri-facebook-circle-line icon"></i>
+              <i href="https://www.instagram.com//" className="ri-instagram-line icon"></i>
+              <i href="https://www.facebook.com/" className="ri-facebook-circle-line icon"></i>
               <i className="ri-copyright-line icon "><i>Giselle2022</i></i>
                   
               </div>
