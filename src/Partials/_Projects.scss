@@ -115,9 +115,10 @@
   margin-left: 12em;
 }
 
-@media (max-width: 769px){
-  div.column1{
+@media (min-width: 600px) and (max-width: 1023px){
+ .column1{
    float: left;
+   position: relative;
    
   }
   .column {
@@ -125,5 +126,27 @@
     width: 72%;
     
   }
+  .img-1, .img2, .img3, .img4 {
+    border-radius: 20px;
+    bottom: 3px;
+    left: 15%;
+    position: relative;
+    width: 100%;
+    
+  }
+  .btn{
+    background: #fff;
+    border-radius: 70px;
+    color: #000;
+    cursor: pointer;
+    font-family: Courier New,Courier,monospace;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 100px;
+    padding: 5px;
+    width: 100%;
+}
+  
+ 
   
 }
