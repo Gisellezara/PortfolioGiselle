@@ -35,7 +35,7 @@ const Profile = () => {
             <h2>Jalisco</h2>
        
             <p>Gateway  </p>
-            <button>View</button>
+           
             </div>
         </div>
         <div class="profileproject">
@@ -44,7 +44,7 @@ const Profile = () => {
             <h2>Planet Progress</h2>
            
             <p>Hackathon</p>
-            <button>View</button>
+           
             </div>
         </div>
         <div class="profileproject">
@@ -62,7 +62,7 @@ const Profile = () => {
             <h2>Penny Juice</h2>
             
             <p>Redesign</p>
-            <button>View</button>
+            
             </div>
          
         </div>
