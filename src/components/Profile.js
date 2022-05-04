@@ -19,7 +19,7 @@ const Profile = () => {
     enthusiastic when learning new Software languages
      and can't wait to see how much I will grow within 
      the Road to Hire coding program. I have recently discovered
-      my passion for coding and reach my full potential. Apart 
+      my passion for coding and apart 
       from coding, I also enjoy reading and traveling.
       
       </p>
